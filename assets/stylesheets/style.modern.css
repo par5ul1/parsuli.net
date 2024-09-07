@@ -197,6 +197,7 @@ nav a[aria-current="page"] {
   border-radius: 0.5em;
   list-style-position: inside;
   margin-top: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
 }
 
 #faq-content details > div > * {
