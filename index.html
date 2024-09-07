@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parsa Rahimi</title>
+    <meta name="description" content="Parsa Rahimi's personal website" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/stylesheets/fonts.css" />
+
+    <!-- Stylesheets & Scripts -->
+    <link
+      id="main-stylesheet"
+      rel="stylesheet"
+      href="/assets/stylesheets/style.plain.css"
+    />
+    <script
+      id="main-scripts"
+      type="module"
+      src="/assets/scripts/plain-scripts.js"
+    ></script>
+  </head>
+
+  <style>
+    body {
+      display: none; /* Hidden until search params are parsed to avoid FOUC */
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="hero">
+      <canvas id="hero-animation" style="display: none"></canvas>
+      <h1>Parsa Rahimi</h1>
+      <h2><i>programmer & cinephile.</i></h2>
+    </section>
+
+    <section id="faq" data-open="false">
+      <h1>Frequently Asked Questions</h1>
+      <button onclick="toggleAll()" id="faq-toggle">Toggle All</button>
+      <br />
+      <br />
+      <div id="faq-content">
+        <details>
+          <summary><i>Frequently Asked Questions</i>? Really?</summary>
+          <div>
+            <p>
+              Yeah! I think it's less boring than a traditional "About Me",
+              don&apos;t you?
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>What do you do?</summary>
+          <div>
+            <p>
+              For a living? I am currently a software engineer at
+              <a target="_blank" href="https://www.bestever.ai"> Bestever</a>. I
+              mainly do frontend.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Where are you based?</summary>
+          <div>
+            <p>
+              I'm based in
+              <a
+                target="_blank"
+                href="https://www.wikipedia.org/wiki/San_Francisco"
+                >San Francisco</a
+              >!
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>What did you study?</summary>
+          <div>
+            <p>
+              I graduated Summa Cum Laude with a
+              <a
+                target="_blank"
+                href="https://www.usfca.edu/arts-sciences/programs/undergraduate/computer-science/program-overview"
+                >B.S. in Computer Science</a
+              >
+              and minors in
+              <a
+                target="_blank"
+                href="https://www.usfca.edu/arts-sciences/programs/undergraduate/mathematics/minor"
+                >Mathematics</a
+              >
+              and
+              <a
+                target="_blank"
+                href="https://www.usfca.edu/arts-sciences/programs/undergraduate/film-studies-minor/program-overview"
+                >Film</a
+              >
+              from
+              <a target="_blank" href="https://www.usfca.edu/"
+                >the University of San Francisco</a
+              >. Before that, I attended the
+              <a target="_blank" href="https://www.asmilan.org/"
+                >American School of Milan</a
+              >.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>What languages do you know?</summary>
+          <div>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://en.wikipedia.org/wiki/English_language"
+                  >English</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://es.wikipedia.org/wiki/Idioma_espa%C3%B1ol"
+                  >Spanish</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://it.wikipedia.org/wiki/Lingua_italiana"
+                  >Italian</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://fa.wikipedia.org/wiki/زبان_فارسی"
+                  >Farsi</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://de.wikipedia.org/wiki/Deutsche_Sprache"
+                  >~German</a
+                >
+              </li>
+            </ul>
+            <br />
+
+            <p>
+              If you meant programming languages, I find it more productive to
+              list out a non-exhaustive list of languages
+              <i>I have used</i> (I'll update this list depending on who I'm
+              trying to impress):
+            </p>
+
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://en.wikipedia.org/wiki/C_(programming_language)"
+                  >C</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://en.wikipedia.org/wiki/C%2B%2B"
+                  >C++</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://en.wikipedia.org/wiki/Java_(programming_language)"
+                  >Java</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://www.python.org/">Python</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.typescriptlang.org/"
+                  >TypeScript</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://www.latex-project.org/"
+                  >LaTeX</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://developer.apple.com/swift/"
+                  >Swift</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.mathworks.com/products/matlab.html"
+                  >MATLAB</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>
+            What are your favorite web libraries/frameworks/tools?
+          </summary>
+          <div>
+            <p>
+              Despite this website being built with no external dependencies, I
+              do love me some of the following:
+            </p>
+            <ul>
+              <li><a target="_blank" href="https://reactjs.org/">React</a></li>
+              <li><a target="_blank" href="https://nextjs.org/">Next.js</a></li>
+              <li>
+                <a target="_blank" href="https://tanstack.com/query"
+                  >TanStack Query</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://tailwindcss.com/"
+                  >TailwindCSS</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://greensock.com/gsap/"
+                  >Greensock Animation Platform</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://threejs.org/">Three.js</a> (And
+                <a href="https://github.com/pmndrs/react-three-fiber"
+                  >React-Three-Fiber</a
+                >
+                by extension)
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>Where can I find your work?</summary>
+          <div>
+            <p>
+              All my programming projects are on my
+              <a target="_blank" href="https://github.com/par5ul1">GitHub</a>
+              profile.
+              <br />
+              My films can be found on
+              <a target="_blank" href="https://www.youtube.com/@parsulimovies."
+                >Youtube</a
+              >.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>What's your favorite game/genre?</summary>
+          <div>
+            <p>I mostly play platformers. My all time favorites are:</p>
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.celestegame.com/"
+                  >Celeste</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.mariowiki.com/Super_Mario_Galaxy"
+                  >Super Mario Galaxy</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.mariowiki.com/Super_Mario_World"
+                  >Super Mario World</a
+                >
+              </li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>What's your favorite movie?</summary>
+          <div>
+            <p>
+              Obviously, there is no answer, but you can find my thoughts on
+              movies on my
+              <a target="_blank" href="https://www.letterboxd.com/par5ul1"
+                >Letterboxd</a
+              >.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>What's your favorite color?</summary>
+          <div>
+            <p>
+              <span
+                title="#FFDA00"
+                style="
+                  display: inline-block;
+                  height: 0.75rem;
+                  aspect-ratio: 1;
+                  background-color: #ffda00;
+                  border-radius: 50%;
+                "
+              ></span>
+              Yellow!
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Do you have any questions for me?</summary>
+          <div>
+            <p>
+              Yes, plenty! So
+              <a href="#contact">get in touch with me</a> and let's chat!
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            style="--_rotation: -10deg"
+            href="mailto:mail@parsuli.net"
+            >Email</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            style="--_rotation: 2deg"
+            href="https://www.linkedin.com/in/parsa-rahimi/"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            style="--_rotation: -6deg"
+            href="https://github.com/par5ul1"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            style="--_rotation: 5deg"
+            href="https://x.com/par5ul1"
+            >X</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <!-- TODO: -->
+      <hr />
+      <div>
+        <a href="https://github.com/par5ul1/par5ul1.github.io" target="_blank"
+          >Source Code</a
+        >
+        —
+        <a
+          href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fparsuli.net"
+          >Lighthouse Report</a
+        >
+      </div>
+      <p id="copyright-notice">
+        © <span id="copyright-year">MMXXIV</span> Parsa Rahimi. All Rights
+        Reserved.
+      </p>
+    </footer>
+
+    <div
+      id="modernize-demodernize-button"
+      aria-label="Modernize/Demodernize"
+      title="Try it out!"
+      style="
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        width: 56px;
+        height: 32px;
+      "
+      onclick="isModern() ? demodernize() : modernize()"
+    >
+      <style>
+        #modernize-demodernize-button::before {
+          content: "";
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          top: calc(50% - 12px);
+          transition: all 0.2s ease-in-out;
+        }
+      </style>
+    </div>
+  </body>
+  <script>
+    /* Functions for switching between stylesheets
+     * @param {'plain' | 'modern'} style - The style to switch to
+     */
+    function updateStylesheet(style) {
+      const stylesheet = document.getElementById("main-stylesheet");
+      stylesheet.href = `assets/stylesheets/style.${style}.css`;
+    }
+
+    /* Functions for switching between scripts
+     * @param {'plain' | 'modern'} style - The style to switch to
+     */
+    function updateScripts(style) {
+      const scripts = document.getElementById("main-scripts");
+      const newScripts = document.createElement("script");
+      newScripts.id = "main-scripts";
+      newScripts.type = "module";
+      newScripts.src = `assets/scripts/${style}-scripts.js`;
+      scripts.replaceWith(newScripts);
+    }
+
+    /* Functions for switching between stylesheets & scripts
+     * @param {'plain' | 'modern'} style - The style to switch to
+     */
+    function updateResources(style) {
+      updateStylesheet(style);
+      updateScripts(style);
+    }
+
+    function transitionEverything() {
+      const style = document.createElement("style");
+      document.getElementById("transition-style")?.remove();
+      style.id = "transition-style";
+      style.innerHTML = `
+        * {
+          transition: all 0.75s cubic-bezier(0.83, 0, 0.17, 1);
+        }
+      `;
+      document.head.appendChild(style);
+
+      setTimeout(() => {
+        document.getElementById("transition-style")?.remove();
+      }, 1000);
+    }
+
+    function modernize() {
+      transitionEverything();
+      updateResources("modern");
+      const url = new URL(window.location.href);
+      url.searchParams.set("style", "modern");
+      window.history.replaceState(null, null, url.toString());
+      window.scrollTo(0, 0); // Scroll to top
+    }
+
+    function demodernize() {
+      transitionEverything();
+      updateResources("plain");
+      const url = new URL(window.location.href);
+      url.searchParams.set("style", "plain");
+      window.history.replaceState(null, null, url.toString());
+    }
+
+    function isModern() {
+      return (
+        new URL(window.location.href).searchParams.get("style") === "modern"
+      );
+    }
+
+    const url = new URL(window.location.href);
+    updateResources(isModern() ? "modern" : "plain");
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Style is ready. Show the page.
+      document.body.style.display = "block";
+    });
+  </script>
+
+  <script src="/assets/scripts/toggle-faq-details.js"></script>
+  <script src="/assets/scripts/update-copyright-year.js"></script>
+</html>

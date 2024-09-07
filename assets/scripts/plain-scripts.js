@@ -1,0 +1,1 @@
+import "./modernize-dialog.js";

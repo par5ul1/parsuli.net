@@ -1,0 +1,75 @@
+/* Minimal Resets */
+* {
+  box-sizing: border-box;
+}
+
+section h1 {
+  font-size: 2em;
+}
+
+/* Bare Minimum Styles */
+
+body {
+  max-width: 800px; /* Old-timey width */
+  margin: 0 auto;
+  padding: 1em;
+}
+
+nav {
+  display: none;
+}
+
+section {
+  margin-bottom: 5em;
+}
+
+#faq summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#faq #faq-toggle {
+  float: right;
+}
+
+footer {
+  text-align: center;
+}
+
+#modernize-dialog {
+  width: 600px;
+}
+
+#modernize-dialog #close-button {
+  background-image: url(/assets/images/icons/x.jpg);
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  border: none;
+}
+
+#modernize-dialog #close-button:active {
+  transform: rotate(180deg);
+}
+
+#modernize-dialog #action-buttons {
+  float: right;
+}
+
+#modernize-dialog #action-buttons button {
+  margin-left: 0.5em;
+}
+
+#modernize-demodernize-button {
+  border: outset;
+  overflow: hidden;
+}
+#modernize-demodernize-button::before {
+  left: 2px;
+  background-color: darkslategray;
+  background-image: url(/assets/images/icons/toggle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
